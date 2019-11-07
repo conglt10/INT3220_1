@@ -6,7 +6,7 @@ const version = require("./package.json").version
 const WebSocketServer = require("ws")
 const Server = WebSocketServer.Server
 const AppRouter = require("./app-router")
-// const Model = require("./models")
+const Model = require("./models/model")
 const Database = require("./database")
 const path = require("path")
 
@@ -36,11 +36,11 @@ new Database.Database().connect().then((db) => {
 	console.log("Successful connected to database.")
 	app.db = db;
 }).catch((err) => {
-    console.log(`Faile connect to database ${err}`)
+    console.log(`Faile connect to database: ${err}`)
     throw(err);
 });
 
-// app.models = new Model(app);
+app.models = new Model(app);
 app.routers = new AppRouter(app);
 
 app.server.listen(process.env.PORT || PORT, () => {
