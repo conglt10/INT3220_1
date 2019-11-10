@@ -170,6 +170,7 @@
                     }
                 }
             });
+            
             if (errors.length) {
                 // this is not pass of the validation.
                 const err = _.join(errors, ',');
