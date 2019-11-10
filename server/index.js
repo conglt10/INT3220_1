@@ -32,7 +32,7 @@ app.use('/', express.static(wwwPath));
 
 // Connect to Mongo Database
 
-new Database.Database().connect().then((db) => {
+new Database().connect().then((db) => {
 	console.log("Successful connected to database.")
 	app.db = db;
 }).catch((err) => {
@@ -46,3 +46,5 @@ app.routers = new AppRouter(app);
 app.server.listen(process.env.PORT || PORT, () => {
         console.log(`App is running on port ${app.server.address().port}`);
 });
+
+module.exports = app
