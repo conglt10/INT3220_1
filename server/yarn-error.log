@@ -25,6 +25,7 @@ npm manifest:
     "author": "",
     "license": "ISC",
     "dependencies": {
+      "add": "^2.0.6",
       "bcrypt": "^3.0.6",
       "body-parser": "^1.19.0",
       "cors": "^2.8.5",
@@ -35,8 +36,8 @@ npm manifest:
       "moment": "^2.24.0",
       "mongodb": "^3.3.3",
       "path": "^0.12.7",
-      "uWebSockets.js": "github:uNetworking/uWebSockets.js#v16.1.0",
-      "uws": "^100.0.1"
+      "uws": "10.148.1",
+      "yarn": "^1.19.2"
     }
   }
 
@@ -58,6 +59,10 @@ Lockfile:
     dependencies:
       mime-types "~2.1.24"
       negotiator "0.6.2"
+  
+  add@^2.0.6:
+    version "2.0.6"
+    resolved "https://registry.yarnpkg.com/add/-/add-2.0.6.tgz#248f0a9f6e5a528ef2295dbeec30532130ae2235"
   
   ansi-regex@^2.0.0:
     version "2.1.1"
@@ -796,10 +801,6 @@ Lockfile:
       media-typer "0.3.0"
       mime-types "~2.1.24"
   
-  "uWebSockets.js@github:uNetworking/uWebSockets.js#v16.1.0":
-    version "16.1.0"
-    resolved "https://codeload.github.com/uNetworking/uWebSockets.js/tar.gz/b49dfbaefa34118b954c82823fe0a23927cf4d3b"
-  
   unpipe@1.0.0, unpipe@~1.0.0:
     version "1.0.0"
     resolved "https://registry.yarnpkg.com/unpipe/-/unpipe-1.0.0.tgz#b2bf4ee8514aae6165b4817829d21b2ef49904ec"
@@ -818,9 +819,9 @@ Lockfile:
     version "1.0.1"
     resolved "https://registry.yarnpkg.com/utils-merge/-/utils-merge-1.0.1.tgz#9f95710f50a267947b2ccc124741c1028427e713"
   
-  uws@^100.0.1:
-    version "100.0.1"
-    resolved "https://registry.yarnpkg.com/uws/-/uws-100.0.1.tgz#39b6c14ed4be8af87037b3e8c8965f55a6743fc3"
+  uws@10.148.1:
+    version "10.148.1"
+    resolved "https://registry.yarnpkg.com/uws/-/uws-10.148.1.tgz#fd1a79cf6118a388e0a1bed8a1397030d2c4fd2c"
   
   vary@^1, vary@~1.1.2:
     version "1.1.2"
@@ -839,6 +840,10 @@ Lockfile:
   yallist@^3.0.0, yallist@^3.0.3:
     version "3.1.1"
     resolved "https://registry.yarnpkg.com/yallist/-/yallist-3.1.1.tgz#dbb7daf9bfd8bac9ab45ebf602b8cbad0d5d08fd"
+  
+  yarn@^1.19.2:
+    version "1.19.2"
+    resolved "https://registry.yarnpkg.com/yarn/-/yarn-1.19.2.tgz#cf5fc9b24ad97a11c65d7cb0b2ac945eb936122f"
 
 Trace: 
   Error: Command "start" not found.
