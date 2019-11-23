@@ -54,7 +54,7 @@ class Message {
                     $skip: offset,
                 },
                 {
-                    $sort: {created: -1}
+                    $sort: {created: 1}
                 }
 
             ];
