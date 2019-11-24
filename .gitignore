@@ -1,1 +1,3 @@
 server/node_modules/
+server/yarn.lock
+client/yarn.lock
